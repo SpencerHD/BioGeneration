@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BioGen2</string>
+    <string-array name="degrees">
+        <item>Computer Science</item>
+        <item>Nursing</item>
+        <item>Business</item>
+        <item>Engineering</item>
+    </string-array>
+</resources>

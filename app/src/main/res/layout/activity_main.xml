@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtLast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toEndOf="@+id/firstName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724" />
+
+    <EditText
+        android:id="@+id/txtLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtSchool"
+        app:layout_constraintStart_toStartOf="@+id/txtFirst" />
+
+    <EditText
+        android:id="@+id/txtSchool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="School"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtYear"
+        app:layout_constraintStart_toStartOf="@+id/txtLast" />
+
+    <EditText
+        android:id="@+id/txtYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="Grad Year"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/degree"
+        app:layout_constraintStart_toEndOf="@+id/gradYear"
+        app:layout_constraintStart_toStartOf="@+id/txtSchool" />
+
+    <EditText
+        android:id="@+id/txtHobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:hint="Favorite Activities"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown" />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:text="First Name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="168dp"
+        android:text="School"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:text="Last Name"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:text="Degree"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/radioBAS"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradYear"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <TextView
+        android:id="@+id/major"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Major"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/dropdown"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degree" />
+
+    <TextView
+        android:id="@+id/favActs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Fav Activities"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtHobbies"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/major"
+        app:layout_constraintVertical_bias="0.309" />
+
+    <TextView
+        android:id="@+id/gradYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="Grad Year"
+        android:text="Grad Year"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/school" />
+
+    <RadioButton
+        android:id="@+id/radioBS"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:text="B.S"
+        app:layout_constraintBottom_toTopOf="@+id/radioBAS"
+        app:layout_constraintEnd_toStartOf="@+id/radioMS"
+        app:layout_constraintTop_toBottomOf="@+id/txtYear"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioButton
+        android:id="@+id/radioBA"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:text="B.A."
+        app:layout_constraintBottom_toTopOf="@+id/radioBFA"
+        app:layout_constraintEnd_toStartOf="@+id/radioMFA" />
+
+    <RadioButton
+        android:id="@+id/radioPHD"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="48dp"
+        android:text="Ph.D."
+        app:layout_constraintBottom_toTopOf="@+id/radioMD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtYear"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioButton
+        android:id="@+id/radioMD"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="48dp"
+        android:text="M.D."
+        app:layout_constraintBottom_toTopOf="@+id/radioDDS"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioMBA"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="MBA"
+        app:layout_constraintBottom_toTopOf="@+id/dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/radioJD" />
+
+    <RadioButton
+        android:id="@+id/radioMA"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:text="M.A."
+        app:layout_constraintBottom_toTopOf="@+id/radioMFA"
+        app:layout_constraintEnd_toStartOf="@+id/radioMD" />
+
+    <RadioButton
+        android:id="@+id/radioJD"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="32dp"
+        android:text="J.D."
+        app:layout_constraintBottom_toTopOf="@+id/dropdown"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioMFA"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:text="MFA"
+        app:layout_constraintBottom_toTopOf="@+id/radioMBA"
+        app:layout_constraintEnd_toStartOf="@+id/radioDDS" />
+
+    <RadioButton
+        android:id="@+id/radioBFA"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="BFA"
+        app:layout_constraintBottom_toTopOf="@+id/dropdown"
+        app:layout_constraintEnd_toStartOf="@+id/radioMBA" />
+
+    <RadioButton
+        android:id="@+id/radioDDS"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="48dp"
+        android:text="DDS"
+        app:layout_constraintBottom_toTopOf="@+id/radioJD"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioBAS"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:text="BAS"
+        app:layout_constraintBottom_toTopOf="@+id/radioBA"
+        app:layout_constraintEnd_toStartOf="@+id/radioMA" />
+
+    <RadioButton
+        android:id="@+id/radioMS"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:text="M.S."
+        app:layout_constraintBottom_toTopOf="@+id/radioMA"
+        app:layout_constraintEnd_toStartOf="@+id/radioPHD"
+        app:layout_constraintTop_toBottomOf="@+id/txtYear"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/dropdown"
+        android:layout_width="214dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="88dp"
+        android:entries="@array/degrees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degree" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHobbies"
+        app:layout_constraintVertical_bias="0.482" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
